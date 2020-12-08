@@ -1,2 +1,2 @@
-import "../sass/index.scss"
-console.log("Building the project")
+import '../sass/index.scss'
+console.log('Building the project')
