@@ -1,1 +1,26 @@
-@import "buttons";
+@import 'buttons';
+
+.contact-input {
+    border: 3px solid black;
+    border-radius: 1.75rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+
+    & input {
+        padding: 0.75em 0;
+    }
+
+    & [type='email'] {
+        width: 65%;
+        background: transparent;
+        color: white;
+        padding-left: 2em;
+    }
+
+    & [type='submit'] {
+        width: 35%;
+        font-weight: bold;
+    }
+}
