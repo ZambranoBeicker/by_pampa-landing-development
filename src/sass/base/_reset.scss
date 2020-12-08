@@ -109,6 +109,11 @@ button {
     border: 0;
 }
 
+button,
+[type='submit'] {
+    cursor: pointer;
+}
+
 h1,
 h2,
 h3,
