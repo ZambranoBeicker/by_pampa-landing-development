@@ -24,3 +24,20 @@ h2 {
         font-size: 3.75rem;
     }
 }
+
+.h-complement {
+    @media screen and (min-width: 1200px) {
+        font-size: 1.25rem;
+    }
+
+    &--secondary {
+        @media screen and (min-width: 1200px) {
+            font-size: 1.125rem;
+        }
+    }
+}
+
+.metrics {
+    font-size: 2.875rem;
+		font-weight: bolder;
+}
