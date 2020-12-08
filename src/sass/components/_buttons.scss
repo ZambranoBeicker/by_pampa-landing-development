@@ -1,3 +1,5 @@
 .btn {
-    border-radius: 1em;
+    padding: .75em 1.5em;
+    border-radius: 1.25em;
+    @extend .bg-secondary;
 }

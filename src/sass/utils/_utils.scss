@@ -21,3 +21,9 @@
     background-color: $color-primary;
     color: white;
 }
+
+
+.bg-secondary{
+    background-color: $color-secondary;
+    color: $color-primary;
+}
