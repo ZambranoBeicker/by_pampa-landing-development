@@ -1,0 +1,29 @@
+@import 'variables';
+
+.container {
+    width: 100%;
+    padding: 0.25rem;
+
+    @media screen and (min-width: 1280px) {
+        width: 1280;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+
+    &--flex {
+        @extend .container;
+
+        display: flex;
+    }
+}
+
+.bg-primary {
+    background-color: $color-primary;
+    color: white;
+}
+
+
+.bg-secondary{
+    background-color: $color-secondary;
+    color: $color-primary;
+}
