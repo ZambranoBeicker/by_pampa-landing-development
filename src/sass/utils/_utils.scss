@@ -11,9 +11,9 @@
     }
 
     &--flex {
-        @extend .container;
-
         display: flex;
+        align-content: center;
+        @extend .container;
     }
 }
 
@@ -22,8 +22,7 @@
     color: white;
 }
 
-
-.bg-secondary{
+.bg-secondary {
     background-color: $color-secondary;
     color: $color-primary;
 }
