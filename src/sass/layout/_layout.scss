@@ -1,0 +1,23 @@
+.container__content {
+    margin: 0 auto;
+
+    &--left {
+        width: 50%;
+        margin-right: auto;
+    }
+
+    &--right {
+        width: 50%;
+        margin-left: auto;
+    }
+}
+
+.section {
+    padding: 6rem 0;
+
+    &--space-evenly {
+        display: flex;
+        justify-content: space-evenly;
+        @extend .section;
+    }
+}
