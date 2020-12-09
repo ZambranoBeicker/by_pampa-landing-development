@@ -1,0 +1,11 @@
+.container__content {
+    &--left {
+        width: 50%;
+        margin-right: auto;
+    }
+
+    &--right {
+        width: 50%;
+        margin-left: auto;
+    }
+}
