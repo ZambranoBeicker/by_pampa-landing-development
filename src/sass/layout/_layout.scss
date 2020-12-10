@@ -24,8 +24,14 @@
         }
 
         &--right {
-            width: 50%;
+            width: 42%;
             margin-left: auto;
+            text-align: right;
+            padding-top: 4rem;
+
+            & p {
+                padding-left: 8.75em;
+            }
         }
     }
 
@@ -37,10 +43,23 @@
 
 .section {
     padding: 6rem 0;
+}
 
-    &--space-evenly {
-        display: flex;
-        justify-content: space-evenly;
-        @extend .section;
+.why {
+    width: 50%;
+
+    & > h3 {
+        margin-left: auto;
+        margin-right: auto;
     }
+
+    & > div {
+        display: flex;
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+
+.clients {
+    text-align: center;
 }
