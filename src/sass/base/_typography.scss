@@ -27,11 +27,6 @@ h2 {
 }
 
 .h-complement {
-    margin-left: 2.5rem;
-    max-width: 42%;
-    text-align: left;
-    line-height: 2rem;
-
     @media screen and (min-width: 1200px) {
         font-size: 1.25rem;
     }
@@ -40,6 +35,13 @@ h2 {
         @media screen and (min-width: 1200px) {
             font-size: 1.125rem;
         }
+    }
+
+    &--why {
+        margin-left: 2.5rem;
+        max-width: 42%;
+        text-align: left;
+        line-height: 2rem;
     }
 }
 
