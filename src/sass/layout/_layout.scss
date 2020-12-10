@@ -1,14 +1,37 @@
-.container__content {
-    margin: 0 auto;
+.container {
+    width: 100%;
+    padding: 0.25rem;
 
-    &--left {
-        width: 50%;
-        margin-right: auto;
+    @media screen and (min-width: 1280px) {
+        width: 1280;
+        padding: 1rem;
+        margin: 0 auto;
     }
 
-    &--right {
-        width: 50%;
-        margin-left: auto;
+    &--flex {
+        display: flex;
+        align-content: center;
+        @extend .container;
+    }
+
+    &__content {
+        margin: 0 auto;
+        text-align: center;
+
+        &--left {
+            width: 50%;
+            margin-right: auto;
+        }
+
+        &--right {
+            width: 50%;
+            margin-left: auto;
+        }
+    }
+
+    &__title {
+        margin-left: 2.75rem;
+        margin-right: 2.75rem;
     }
 }
 
