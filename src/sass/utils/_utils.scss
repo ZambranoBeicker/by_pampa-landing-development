@@ -1,22 +1,5 @@
 @import 'variables';
 
-.container {
-    width: 100%;
-    padding: 0.25rem;
-
-    @media screen and (min-width: 1280px) {
-        width: 1280;
-        padding: 1rem;
-        margin: 0 auto;
-    }
-
-    &--flex {
-        display: flex;
-        align-content: center;
-        @extend .container;
-    }
-}
-
 .bg-primary {
     background-color: $color-primary;
     color: white;
