@@ -24,8 +24,13 @@
         }
 
         &--right {
-            width: 50%;
+            width: 42%;
             margin-left: auto;
+            text-align: right;
+
+            & p {
+                padding-left: 8.75em;
+            }
         }
     }
 

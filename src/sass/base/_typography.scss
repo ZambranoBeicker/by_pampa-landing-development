@@ -50,4 +50,8 @@ h2 {
     text-decoration: underline;
     text-decoration-color: $color-secondary;
     text-decoration-thickness: 5px;
+
+    &--paragraph {
+        font-weight: 600;
+    }
 }
