@@ -16,6 +16,7 @@
 
     &__content {
         margin: 0 auto;
+        text-align: center;
 
         &--left {
             width: 50%;
@@ -26,6 +27,11 @@
             width: 50%;
             margin-left: auto;
         }
+    }
+
+    &__title {
+        margin-left: 2.75rem;
+        margin-right: 2.75rem;
     }
 }
 
