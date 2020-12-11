@@ -66,8 +66,20 @@
         margin: 0 auto;
         width: 80%;
     }
+
+    &__complement {
+        padding-top: 6rem;
+        width: 25%;
+        text-align: center;
+    }
+
+    &__subtitle {
+        font-size: 1.5625rem;
+        margin-bottom: 1.5rem;
+    }
 }
 
-.clients {
+.clients,
+.why__subtitle {
     text-align: center;
 }
