@@ -77,6 +77,17 @@
         font-size: 1.5625rem;
         margin-bottom: 1.5rem;
     }
+
+    &__strategy {
+        & > div:first-child {
+            margin-top: auto;
+        }
+
+        & p {
+            line-height: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
 }
 
 .clients,
