@@ -25,3 +25,33 @@
         font-weight: bold;
     }
 }
+
+.slider-button {
+    width: 75px;
+    border-radius: 50%;
+    display: flex;
+    background: transparent;
+    height: 75px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+
+    &--black {
+        @extend .slider-button;
+        border: 1px solid white;
+
+        & > button {
+            background-color: transparent;
+        }
+    }
+
+    &--white {
+        @extend .slider-button;
+        border: 1px solid black;
+
+        & > button {
+            background-color: transparent;
+        }
+    }
+}
