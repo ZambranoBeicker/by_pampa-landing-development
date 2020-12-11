@@ -1,19 +1,10 @@
 import '../sass/index.scss'
+import 'swiper/swiper.scss'
 
-// import Swiper JS
-//import Swiper from 'swiper'
-//// import Swiper styles
+import Swiper from 'swiper'
 
-////var mySwiper = new Swiper('.swiper-container', {
-////speed: 400,
-////spaceBetween: 100,
-////})
-
-//var mySwiper = document.querySelector('.swiper-container').swiper
-
-//var $next = document.getElementById('next')
-
-//$next.addEventListener('click', () => {
-//mySwiper.slideNext()
-//})
-console.info("It's working")
+var mySwiper = new Swiper('.swiper-container', {
+    direction: 'vertical',
+    speed: 400,
+    spaceBetween: 100,
+})
