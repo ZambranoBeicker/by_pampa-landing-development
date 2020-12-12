@@ -1,6 +1,8 @@
 .container {
     width: 100%;
     padding: 0.25rem;
+    max-height: 460px;
+    position: relative;
 
     @media screen and (min-width: 1280px) {
         width: 1280;
@@ -9,9 +11,10 @@
     }
 
     &--flex {
+        @extend .container;
         display: flex;
         align-content: center;
-        @extend .container;
+        max-height: 540px;
     }
 
     &__content {
@@ -43,6 +46,11 @@
 
 .section {
     padding: 6rem 0;
+
+    &--slider {
+        @extend .section;
+        padding-bottom: 0;
+    }
 }
 
 .why {
@@ -58,8 +66,50 @@
         margin: 0 auto;
         width: 80%;
     }
+
+    &__complement {
+        padding-top: 6rem;
+        width: 25%;
+        text-align: center;
+    }
+
+    &__subtitle {
+        font-size: 1.5625rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__strategy {
+        & > div:first-child {
+            margin-top: auto;
+        }
+
+        & p {
+            line-height: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__unique {
+        & button {
+            background: transparent;
+            color: $color-secondary;
+            font-weight: bold;
+        }
+        & div {
+            margin-bottom: 1.75rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        & p {
+            font-size: 1.5rem;
+        }
+    }
 }
 
-.clients {
+.clients,
+.why__subtitle {
     text-align: center;
 }
