@@ -88,6 +88,25 @@
             margin-bottom: 1rem;
         }
     }
+
+    &__unique {
+        & button {
+            background: transparent;
+            color: $color-secondary;
+            font-weight: bold;
+        }
+        & div {
+            margin-bottom: 1.75rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        & p {
+            font-size: 1.5rem;
+        }
+    }
 }
 
 .clients,
