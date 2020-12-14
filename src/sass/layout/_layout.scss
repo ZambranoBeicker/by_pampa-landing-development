@@ -146,6 +146,7 @@
             font-size: 0.75rem;
             font-weight: bold;
             margin-left: 0.5rem;
+            padding-top: 1rem;
         }
     }
 
@@ -154,9 +155,26 @@
         display: flex;
     }
 
+    &__shipping {
+        width: 40%;
+    }
+
     &__e-commerce {
+        width: 100%;
         justify-content: space-between;
         margin-top: 4rem;
+
+        & img {
+            width: 25%;
+        }
+
+        & button {
+            padding: 0.75rem 1.5rem;
+            border: 2px solid $color-secondary;
+            background: transparent;
+            color: white;
+            border-radius: 2rem;
+        }
     }
 
     &__copy {
