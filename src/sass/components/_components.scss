@@ -40,9 +40,11 @@
     &--black {
         @extend .slider-button;
         border: 1px solid white;
+        z-index: 10;
 
         & > button {
             background-color: transparent;
+            color: white;
         }
     }
 
