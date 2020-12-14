@@ -118,3 +118,22 @@
 .why__subtitle {
     text-align: center;
 }
+
+.lost {
+    display: flex;
+
+    &__graphics {
+        margin-left: auto;
+    }
+
+    &__images {
+        display: flex;
+        margin-top: 0.5rem;
+        justify-content: space-between;
+    }
+    &__content {
+        width: 60%;
+        margin-right: auto;
+        margin-left: 3rem;
+    }
+}
