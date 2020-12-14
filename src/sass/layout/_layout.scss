@@ -137,18 +137,34 @@
         margin-left: 3rem;
         line-height: 1.5rem;
 
-        & p {
-            font-style: italic;
-        }
         & h6 {
             font-size: 1.25rem;
             margin-bottom: 1rem;
         }
+
+        & span {
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-left: 0.5rem;
+        }
+    }
+
+    &__e-commerce,
+    &__shipping {
+        display: flex;
+    }
+
+    &__e-commerce {
+        justify-content: space-between;
+        margin-top: 4rem;
     }
 
     &__copy {
         margin-top: 1rem;
         text-align: left;
+        & p {
+            font-style: italic;
+        }
     }
     &__options {
         font-weight: bold;
