@@ -4,7 +4,7 @@ import 'swiper/swiper.scss'
 import Swiper from 'swiper'
 
 var mySwiper = new Swiper('.swiper-container', {
-    direction: 'vertical',
+    direction: 'horizontal',
     speed: 400,
     spaceBetween: 100,
 })
