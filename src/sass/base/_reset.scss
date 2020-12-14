@@ -122,10 +122,6 @@ h5,
 h6 {
     margin-bottom: 0.5rem;
 }
-#white-prev,
-#black-prev {
-    padding: 0;
-}
 
 #pampa {
     border-right: 2px solid;
@@ -141,4 +137,8 @@ header {
         font-size: 0.875rem;
         font-style: italic;
     }
+}
+#white-prev,
+#black-prev {
+    padding-right: 0;
 }
