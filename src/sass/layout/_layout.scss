@@ -132,8 +132,19 @@
         justify-content: space-between;
     }
     &__content {
-        width: 60%;
+        width: 50%;
         margin-right: auto;
         margin-left: 3rem;
+    }
+    &__options {
+        font-weight: bold;
+        display: flex;
+        border-bottom: 2px solid;
+        padding-bottom: 1rem;
+
+        & p {
+            margin-right: 8.5rem;
+            letter-spacing: 3px;
+        }
     }
 }
