@@ -68,9 +68,14 @@
     }
 
     &__complement {
+        padding: 0 1rem;
         padding-top: 6rem;
         width: 25%;
         text-align: center;
+
+        & p {
+            line-height: 1.75rem;
+        }
     }
 
     &__subtitle {
