@@ -37,12 +37,23 @@
     bottom: 10%;
     right: 10%;
 
+    & span {
+        display: block;
+        margin: auto;
+    }
+
+    & img {
+        max-width: 1rem;
+    }
+
     &--black {
         @extend .slider-button;
         border: 1px solid white;
+        z-index: 10;
 
         & > button {
             background-color: transparent;
+            color: white;
         }
     }
 

@@ -68,9 +68,14 @@
     }
 
     &__complement {
+        padding: 0 1rem;
         padding-top: 6rem;
         width: 25%;
         text-align: center;
+
+        & p {
+            line-height: 1.75rem;
+        }
     }
 
     &__subtitle {
@@ -112,4 +117,98 @@
 .clients,
 .why__subtitle {
     text-align: center;
+}
+
+.clients {
+    & button {
+        background: transparent;
+        position: absolute;
+        height: 100%;
+        top: 0;
+    }
+
+    & button:nth-of-type(1) {
+        left: 0;
+    }
+    & button:nth-of-type(2) {
+        right: 0;
+    }
+}
+
+.lost {
+    display: flex;
+
+    &__graphics {
+        margin-left: auto;
+    }
+
+    &__images {
+        display: flex;
+        margin-top: 0.5rem;
+        justify-content: space-between;
+    }
+    &__content {
+        width: 38%;
+        margin-right: auto;
+        margin-left: 3rem;
+        line-height: 1.5rem;
+
+        & h6 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        & span {
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-left: 0.5rem;
+            padding-top: 1rem;
+        }
+    }
+
+    &__e-commerce,
+    &__shipping {
+        display: flex;
+    }
+
+    &__shipping {
+        width: 40%;
+    }
+
+    &__e-commerce {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 4rem;
+
+        & img {
+            width: 25%;
+        }
+
+        & button {
+            padding: 0.75rem 1.5rem;
+            border: 2px solid $color-secondary;
+            background: transparent;
+            color: white;
+            border-radius: 2rem;
+        }
+    }
+
+    &__copy {
+        margin-top: 1rem;
+        text-align: left;
+        & p {
+            font-style: italic;
+        }
+    }
+    &__options {
+        font-weight: bold;
+        display: flex;
+        border-bottom: 2px solid;
+        padding-bottom: 1rem;
+
+        & p {
+            margin-right: 3.5rem;
+            letter-spacing: 3px;
+        }
+    }
 }

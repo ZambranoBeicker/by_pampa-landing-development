@@ -122,6 +122,33 @@ h5,
 h6 {
     margin-bottom: 0.5rem;
 }
-#white-prev {
-    padding: 0;
+
+#pampa {
+    border-right: 2px solid;
+    padding-right: 0.5rem;
+    margin-right: 0.5rem;
+    font-weight: 700;
+}
+header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    & p {
+        font-size: 0.875rem;
+        font-style: italic;
+    }
+}
+#black-prev {
+    padding-right: 0;
+}
+
+#black-next {
+    padding-left: 0;
+}
+
+#white-prev img {
+    transform: rotate(90deg);
+}
+#white-next img {
+    transform: rotate(-90deg);
 }

@@ -11,14 +11,17 @@
     </head>
     <body>
         <header class="header bg-primary">
-            <div class="container">
-                <p>Tu tienda online</p>
+            <div class="container--flex">
+                <div class="container__content space-evenly">
+                    <h6 id="pampa">PAMPA</h6>
+                    <p>Tu tienda online</p>
+                </div>
             </div>
         </header>
 
         <div class="bg-primary section">
             <div class="container">
-                <div class="swiper-container">
+                <div id="black-slider" class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="container__content--left">
@@ -39,8 +42,119 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="swiper-slide">
+                            <div class="container--flex">
+                                <div class="container__content lost">
+                                    <div class="lost__graphics">
+                                        <div class="lost__main-image">
+                                            <img
+                                                src="./public/emmascarar.jpg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="lost__images">
+                                            <div>
+                                                <img
+                                                    src="./public/emmascarar1.jpg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <div>
+                                                <img
+                                                    src="./public/emmascarar2.jpg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <div>
+                                                <img
+                                                    src="./public/emmascarar3.jpg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <div>
+                                                <img
+                                                    src="./public/emmascarar4.jpg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lost__content">
+                                        <div class="lost__options">
+                                            <p>NOSOTROS</p>
+                                            <p>DETALLES</p>
+                                            <p>COMPRAR</p>
+                                        </div>
+                                        <div class="lost__copy">
+                                            <h6>
+                                                Colocar un botón en el lugar o
+                                                con el color equivocado, podría
+                                                generarle grandes pérdidas a tu
+                                                negocio.
+                                            </h6>
+                                            <p>
+                                                Así como probablemente no te
+                                                arriesgarías a construir una
+                                                casa por tu cuenta, tampoco
+                                                deberías hacerlo con tu
+                                                e-commerce.
+                                            </p>
+                                        </div>
+                                        <div class="lost__e-commerce">
+                                            <div class="lost__shipping">
+                                                <img
+                                                    src="./public/illustrations/Icon.svg"
+                                                    alt=""
+                                                />
+                                                <span>Entrega Gratis</span>
+                                            </div>
+                                            <button>
+                                                Quiero mi e-commerce
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container--flex">
+                                <div class="container__content">
+                                    <h5 class="ux-headline">
+                                        Nuestra plataforma está diseñada
+                                        pensando en que la experiencia del
+                                        usuario sea
+                                        <u class="underline"
+                                            >fácil e intuitiva</u
+                                        >
+                                        , permitiendo así lograr altos índices
+                                        de conversión.
+                                    </h5>
+                                    <div>
+                                        <img
+                                            src="./public/illustrations/market-products.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="slider-button--black">
+                <button id="black-prev">
+                    <img
+                        src="./public/illustrations/arrow-right-black.svg"
+                        alt=""
+                    />
+                </button>
+                <span class="counter">1</span>
+                <button id="black-next">
+                    <img
+                        src="./public/illustrations/arrow-left-black.svg"
+                        alt=""
+                    />
+                </button>
             </div>
         </div>
 
@@ -72,8 +186,8 @@
             <div class="container--flex">
                 <div class="container__content--left">
                     <img
-                        src="https://via.placeholder.com/420"
-                        alt="Webs pages built by pampa"
+                        src="./public/pampa-be_able.png"
+                        alt="pages built by pampa"
                     />
                 </div>
                 <div class="container__content--right">
@@ -102,7 +216,7 @@
 
                             <div>
                                 <img
-                                    src="https://via.placeholder.com/198x190"
+                                    src="./public/illustrations/online-shopping.png"
                                     alt="Gente comprando una website"
                                 />
                                 <p class="h-complement--why">
@@ -129,16 +243,23 @@
                         <div class="space-evenly">
                             <div>
                                 <img
-                                    src="https://via.placeholder.com/200x300"
+                                    src="./public/lacompetencia.jpg"
                                     alt="La competencia"
                                 />
                             </div>
-                            <p class="why__complement h-complement">
-                                Tendrás tu tienda online, con tu propio dominio.
-                            </p>
+                            <div class="why__complement">
+                                <p class="h-complement">
+                                    Tendrás tu tienda online, con tu propio
+                                    dominio.
+                                </p>
+                                <img
+                                    src="./public/illustrations/trazado.svg"
+                                    alt=""
+                                />
+                            </div>
                             <div>
                                 <img
-                                    src="https://via.placeholder.com/200x300"
+                                    src="./public/dominio.jpg"
                                     alt="La competencia"
                                 />
                             </div>
@@ -147,16 +268,10 @@
                     <div class="swiper-slide">
                         <div class="why__strategy space-evenly">
                             <div>
-                                <img
-                                    src="https://via.placeholder.com/215x132"
-                                    alt=""
-                                />
+                                <img src="./public/strategy1.jpg" alt="" />
                             </div>
                             <div>
-                                <img
-                                    src="https://via.placeholder.com/217x340"
-                                    alt=""
-                                />
+                                <img src="./public/strategy2.jpg" alt="" />
                             </div>
                             <div class="w-1/4">
                                 <div>
@@ -200,37 +315,57 @@
                                     >
                                 </p>
                             </div>
+                            <div>
+                                <img src="./public/gancho.svg" alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="slider-button--white">
-                <button id="white-prev">Left</button>
-                <button id="white-next">Right</button>
+                <button id="white-prev">
+                    <img src="./public/illustrations/Right.svg" alt="" />
+                </button>
+                <span class="counter">1</span>
+                <button id="white-next">
+                    <img src="./public/illustrations/Right.svg" alt="" />
+                </button>
             </div>
         </div>
 
         <div class="bg-primary section">
             <div class="container clients">
+                <button>
+                    <img
+                        src="./public/illustrations/arrow-right-black.svg"
+                        alt=""
+                    />
+                </button>
                 <h4 class="margin-secondary">Nuestros clientes</h4>
                 <div class="space-evenly">
                     <div>
-                        <img src="https://via.placeholder.com/120" alt="" />
+                        <img src="./public/logos/arrow.png" alt="" />
                     </div>
                     <div>
-                        <img src="https://via.placeholder.com/180x92" alt="" />
+                        <img src="./public/logos/catapulta.png" alt="" />
                     </div>
                     <div>
-                        <img src="https://via.placeholder.com/200x36" alt="" />
+                        <img src="./public/logos/fina.png" alt="" />
                     </div>
                     <div>
-                        <img src="https://via.placeholder.com/164x80" alt="" />
+                        <img src="./public/logos/agululu.png" alt="" />
                     </div>
                     <div>
-                        <img src="https://via.placeholder.com/252x68" alt="" />
+                        <img src="./public/logos/nikkei.png" alt="" />
                     </div>
                 </div>
+                <button>
+                    <img
+                        src="./public/illustrations/arrow-left-black.svg"
+                        alt=""
+                    />
+                </button>
             </div>
         </div>
 
@@ -254,5 +389,17 @@
                 </div>
             </div>
         </div>
+        <footer class="bg-primary">
+            <div class="container--flex">
+                <div class="container__content">
+                    <div>
+                        <img
+                            src="./public/illustrations/footer-logo.png"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
