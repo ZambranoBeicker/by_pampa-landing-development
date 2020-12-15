@@ -1,6 +1,7 @@
 /node_modules
 
-/assets
+/dist/assets
+/dist/*.html
 
 /*.html
 
