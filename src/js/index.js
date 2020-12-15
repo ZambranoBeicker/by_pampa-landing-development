@@ -1,5 +1,5 @@
 import '../sass/index.scss'
-import 'Swiper/Swiper.css'
+import 'swiper/swiper.scss'
 
 import Swiper from 'swiper'
 
