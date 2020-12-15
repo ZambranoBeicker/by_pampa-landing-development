@@ -5,21 +5,21 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
 const htmlWebpack = new htmlWebpackPlugin({
     template: path.resolve(__dirname, 'src', 'index.template.html'),
-    filename: './index.html',
+    filename: '../index.html',
     minify: 'auto',
 })
 
 module.exports = {
     entry: { index: path.resolve(__dirname, 'src/js', 'index.js') },
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'assets'),
         publicPath: '.',
-        filename: 'assets/bundle.js',
+        filename: 'bundle.js',
     },
     plugins: [
         htmlWebpack,
         new MiniCssExtractPlugin({
-            filename: 'assets/[name].css',
+            filename: '[name].css',
         }),
     ],
     optimization: {
@@ -55,7 +55,7 @@ module.exports = {
     devtool: 'source-map',
 
     devServer: {
-        contentBase: './dist',
+        contentBase: '.',
         open: true,
     },
 }

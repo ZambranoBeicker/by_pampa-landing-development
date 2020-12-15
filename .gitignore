@@ -1,6 +1,8 @@
 /node_modules
 
-/dist
+/assets
+
+/*.html
 
 # Local Netlify folder
 .netlify
