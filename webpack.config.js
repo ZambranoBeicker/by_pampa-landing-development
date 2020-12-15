@@ -12,7 +12,7 @@ const htmlWebpack = new htmlWebpackPlugin({
 module.exports = {
     entry: { index: path.resolve(__dirname, 'src/js', 'index.js') },
     output: {
-        path: path.resolve(__dirname, 'assets'),
+        path: path.resolve(__dirname, 'dist/assets'),
         publicPath: '.',
         filename: 'bundle.js',
     },
@@ -55,7 +55,7 @@ module.exports = {
     devtool: 'source-map',
 
     devServer: {
-        contentBase: '.',
+        contentBase: './dist',
         open: true,
     },
 }
