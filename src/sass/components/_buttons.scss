@@ -1,7 +1,11 @@
 .btn {
     margin-top: 1.5rem;
+    font-size: 0.875rem;
     padding: 0.75em 1.5em;
-    font-size: 1.25rem;
     border-radius: 1.25em;
     @extend .bg-secondary;
+
+    @media screen and (min-width: 1280px) {
+        font-size: 1.25rem;
+    }
 }
