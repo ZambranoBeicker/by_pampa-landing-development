@@ -13,8 +13,13 @@
     &--flex {
         @extend .container;
         display: flex;
+        flex-wrap: wrap;
         align-content: center;
         max-height: 540px;
+
+        @media screen and (min-width: 1200px) {
+            flex-wrap: nowrap;
+        }
     }
 
     &__content {
@@ -33,17 +38,22 @@
         }
 
         &--right {
-            width: 50%;
-            margin-left: auto;
-            text-align: right;
+            width: 80%;
+            margin: auto;
+            text-align: left;
             padding-top: 4rem;
 
             @media screen and (min-width: 1280px) {
                 width: 42%;
+                margin-left: auto;
+                text-align: right;
             }
 
             & p {
-                padding-left: 8.75em;
+                padding-right: 1em;
+                @media screen and (min-width: 1200px) {
+                    padding-left: 8.75em;
+                }
             }
         }
     }
