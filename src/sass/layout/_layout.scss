@@ -28,6 +28,7 @@
             @media screen and (min-width: 1280px) {
                 width: 50%;
                 margin-right: auto;
+                margin-left: 0;
             }
         }
 
@@ -48,8 +49,8 @@
     }
 
     &__title {
-        margin-left: 2.75rem;
-        margin-right: 2.75rem;
+        width: 78%;
+        margin: auto;
     }
 }
 

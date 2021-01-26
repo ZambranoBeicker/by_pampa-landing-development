@@ -4,6 +4,21 @@
     background-color: $color-primary;
     color: white;
 }
+.mobile\:bg-primary {
+    @media screen and (max-width: 640px) {
+        background: $color-primary;
+        color: white;
+    }
+}
+
+.desktop\:bg-primary {
+    background: white;
+    color: black;
+    @media screen and (min-width: 1024px) {
+        background: $color-primary;
+        color: white;
+    }
+}
 
 .bg-secondary {
     background-color: $color-secondary;
@@ -35,5 +50,11 @@
 .mobile\:text-center {
     @media screen and (max-width: 640px) {
         text-align: center;
+    }
+}
+
+.mobile\:text-left {
+    @media screen and (max-width: 640px) {
+        text-align: left !important;
     }
 }
