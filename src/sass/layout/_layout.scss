@@ -232,3 +232,24 @@
         }
     }
 }
+
+.mobile-why {
+    &::last-child {
+        margin-bottom: 0;
+    }
+
+    &__content {
+        padding: 3.5rem 0;
+        padding-left: 1rem;
+        color: black;
+        background: white;
+        font-weight: bold;
+        margin: 1rem 0;
+        display: flex;
+
+        & button {
+            margin-left: auto;
+            margin-right: 1rem;
+        }
+    }
+}
