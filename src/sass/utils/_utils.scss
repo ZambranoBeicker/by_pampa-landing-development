@@ -47,6 +47,14 @@
     margin: 0 auto;
 }
 
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
+}
 .mobile\:text-center {
     @media screen and (max-width: 640px) {
         text-align: center;
@@ -65,8 +73,12 @@
     }
 }
 
-.dektop\:hidden {
+.desktop\:hidden {
     @media screen and (min-width: 1024px) {
         display: none;
     }
+}
+
+.rotate-90{
+    transform: rotate(90deg);
 }
