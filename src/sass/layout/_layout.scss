@@ -158,6 +158,11 @@
 .lost {
     display: flex;
 
+    &--mobile {
+        @extend .lost;
+        flex-direction: column;
+    }
+
     &__graphics {
         margin-left: auto;
     }
@@ -168,14 +173,23 @@
         justify-content: space-between;
     }
     &__content {
-        width: 38%;
+        width: 85%;
         margin-right: auto;
         margin-left: 3rem;
         line-height: 1.5rem;
 
+        @media screen and (min-width: 1024px) {
+            width: 38%;
+        }
+
         & h6 {
             font-size: 1.25rem;
             margin-bottom: 1rem;
+            font-weight: normal;
+
+            @media screen and (min-width: 1024px) {
+                font-weight: bold;
+            }
         }
 
         & span {
@@ -183,6 +197,21 @@
             font-weight: bold;
             margin-left: 0.5rem;
             padding-top: 1rem;
+        }
+
+        &--mobile {
+            @extend .lost__content;
+            width: 70%;
+            margin-right: auto;
+            margin-bottom: 2rem;
+
+            & p {
+                text-align: left;
+            }
+            & h1,
+            & p {
+                margin-bottom: 2rem;
+            }
         }
     }
 
@@ -205,7 +234,7 @@
         }
 
         & button {
-            padding: 0.75rem 1.5rem;
+            padding: 0 1em;
             border: 2px solid $color-secondary;
             background: transparent;
             color: white;
@@ -225,6 +254,13 @@
         display: flex;
         border-bottom: 2px solid;
         padding-bottom: 1rem;
+        font-size: 10px;
+        margin-top: 1.5rem;
+
+        @media screen and (min-width: 1024px) {
+            font-size: 1rem;
+            margin-top: 0;
+        }
 
         & p {
             margin-right: 3.5rem;
