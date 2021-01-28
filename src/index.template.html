@@ -20,7 +20,7 @@
         </header>
 
         <div class="bg-primary section">
-            <div class="container">
+            <div class="container mobile:hidden">
                 <div id="black-slider" class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -143,7 +143,23 @@
                     </div>
                 </div>
             </div>
-            <div class="slider-button--black">
+            <div class="container desktop:hidden">
+                <div class="container__content--left mobile:text-center">
+                    <div>
+                        <h1 class="margin-primary">
+                            ¿Qué tan difícil puede ser crear un e-commerce?
+                        </h1>
+                    </div>
+                    <div>
+                        <p class="h-complement">
+                            Aunque no lo creas es una ciencia
+                        </p>
+
+                        <button class="btn">Quiero saber por qué</button>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-button--black mobile:hidden">
                 <button id="black-prev">
                     <img
                         src="./public/illustrations/arrow-right-black.svg"
