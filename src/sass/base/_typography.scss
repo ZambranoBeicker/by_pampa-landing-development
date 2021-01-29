@@ -70,10 +70,22 @@ h2 {
 }
 
 .ux-headline {
-    font-weight: 800;
-    line-height: 2.5rem;
-    width: 55%;
+    line-height: 1.25rem;
+    width: 85%;
     margin: 0 auto;
-    margin-bottom: 2rem;
-    font-size: 1.875rem;
+    margin-bottom: 2.75rem;
+    margin-top: 4rem;
+
+    @media screen and (min-width: 1024px) {
+        font-weight: 800;
+        line-height: 2.5rem;
+        width: 55%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        font-size: 1.875rem;
+    }
+
+    & strong {
+        font-weight: 800;
+    }
 }
