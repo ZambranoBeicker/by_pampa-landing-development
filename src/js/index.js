@@ -26,6 +26,12 @@ var mySwiper = new Swiper('.swiper-container', {
     speed: 400,
     spaceBetween: 100,
 })
+var mobileSwiper = new Swiper('.swiper-container--mobile', {
+    slidesPerView: 2,
+    direction: 'horizontal',
+    speed: 400,
+    spaceBetween: 100,
+})
 
 var $blackCounter = document.getElementById('black-counter')
 var $whiteCounter = document.getElementById('white-counter')
