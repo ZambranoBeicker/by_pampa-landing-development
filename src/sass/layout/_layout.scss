@@ -207,6 +207,7 @@
 
             & p {
                 text-align: left;
+                padding-left: 1rem;
             }
             & h1,
             & p {
@@ -222,6 +223,15 @@
 
     &__shipping {
         width: 40%;
+
+        span {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+
+            @media screen and (min-width: 1024px) {
+                padding: 1rem 0 0 0;
+            }
+        }
     }
 
     &__e-commerce {
@@ -247,24 +257,35 @@
         text-align: left;
         & p {
             font-style: italic;
+            padding: 0 1.8rem;
+            @media screen and (min-width: 1024px) {
+                padding: 0;
+            }
         }
     }
     &__options {
         font-weight: bold;
         display: flex;
         border-bottom: 2px solid;
-        padding-bottom: 1rem;
         font-size: 10px;
         margin-top: 1.5rem;
+        padding: 0 1.8rem;
+        padding-bottom: 0.75rem;
+        justify-content: space-between;
 
         @media screen and (min-width: 1024px) {
             font-size: 1rem;
             margin-top: 0;
+            padding-bottom: 1rem;
+            justify-content: normal;
         }
 
         & p {
-            margin-right: 3.5rem;
+            margin-right: auto;
             letter-spacing: 3px;
+            @media screen and (min-width: 1024px) {
+                margin-right: 3.5rem;
+            }
         }
     }
 }
