@@ -30,7 +30,7 @@ var mobileSwiper = new Swiper('.swiper-container--mobile', {
     slidesPerView: 2,
     direction: 'horizontal',
     speed: 400,
-    spaceBetween: 100,
+    spaceBetween: 0,
 })
 
 var $blackCounter = document.getElementById('black-counter')
