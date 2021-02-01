@@ -323,3 +323,29 @@
         margin-bottom: 2rem;
     }
 }
+
+.popup {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    background: white;
+
+    &__store {
+        width: 50%;
+        margin: 0 auto;
+
+        &-copy {
+            max-width: 100%;
+            text-align: left;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        & img {
+            margin-top: 4rem;
+        }
+    }
+}
