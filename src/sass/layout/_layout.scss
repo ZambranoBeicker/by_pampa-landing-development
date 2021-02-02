@@ -380,4 +380,33 @@
             margin-top: 4rem;
         }
     }
+
+    &__strategy {
+        font-size: 1rem;
+        max-width: 85%;
+        margin: 0 auto;
+        padding-top: 3rem;
+
+        & p {
+            margin-top: 1.5rem;
+        }
+
+        & * {
+            font-size: 1rem;
+        }
+
+        &-graphics {
+            margin-bottom: 0.5rem;
+
+            & > div {
+                max-width: 45%;
+                margin-top: auto;
+            }
+
+            & h4 {
+                margin-bottom: 1.75rem;
+                padding-right: 2rem;
+            }
+        }
+    }
 }
