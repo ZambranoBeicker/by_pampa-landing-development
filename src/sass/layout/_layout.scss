@@ -317,6 +317,7 @@
 }
 
 .brands {
+    overflow: hidden;
     flex-direction: column;
     &__headline {
         padding-left: 3.5rem;
