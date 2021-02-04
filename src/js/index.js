@@ -65,10 +65,14 @@ $blackNext.addEventListener('click', () => {
 })
 
 var popupElements = Array.from(document.querySelectorAll('.popup'))
-var popupButtons = Array.from(document.querySelectorAll('.popup-open'))
+var popupOpenButtons = Array.from(document.querySelectorAll('.popup-open'))
+var popupCloseButtons = Array.from(document.querySelectorAll('.popup-close'))
 
-popupButtons.forEach((button, index) => {
-    button.addEventListener('click', () => {
+popupOpenButtons.forEach((openButton, index) => {
+    openButton.addEventListener('click', () => {
         popupElements[index].classList.remove('hidden')
+    })
+    popupCloseButtons[index].addEventListener('click', () => {
+        popupElements[index].classList.add('hidden')
     })
 })
