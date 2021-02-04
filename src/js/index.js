@@ -63,3 +63,12 @@ $blackNext.addEventListener('click', () => {
     $blackCounter.innerText = changeValue($blackCounter, 4, true)
     blackSlider.swiper.slideNext()
 })
+
+var popupElements = Array.from(document.querySelectorAll('.popup'))
+var popupButtons = Array.from(document.querySelectorAll('.popup-open'))
+
+popupButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        popupElements[index].classList.remove('hidden')
+    })
+})
