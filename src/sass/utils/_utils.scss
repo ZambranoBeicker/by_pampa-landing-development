@@ -4,6 +4,21 @@
     background-color: $color-primary;
     color: white;
 }
+.mobile\:bg-primary {
+    @media screen and (max-width: 640px) {
+        background: $color-primary;
+        color: white;
+    }
+}
+
+.desktop\:bg-primary {
+    background: white;
+    color: black;
+    @media screen and (min-width: 1024px) {
+        background: $color-primary;
+        color: white;
+    }
+}
 
 .bg-secondary {
     background-color: $color-secondary;
@@ -30,4 +45,44 @@
 .half-center {
     width: 50%;
     margin: 0 auto;
+}
+
+.mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.text-center {
+    text-align: center;
+}
+.mobile\:text-center {
+    @media screen and (max-width: 640px) {
+        text-align: center;
+    }
+}
+
+.mobile\:text-left {
+    @media screen and (max-width: 640px) {
+        text-align: left !important;
+    }
+}
+
+.mobile\:hidden {
+    @media screen and (max-width: 640px) {
+        display: none !important;
+    }
+}
+
+.desktop\:hidden {
+    @media screen and (min-width: 1024px) {
+        display: none !important;
+    }
+}
+
+.rotate-90 {
+    transform: rotate(90deg);
+}
+
+.hidden {
+    display: none;
 }

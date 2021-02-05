@@ -66,6 +66,11 @@ video {
     text-size-adjust: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 footer,
 header,
 nav,
@@ -102,6 +107,10 @@ table {
     border-spacing: 0;
 }
 
+button {
+    background: transparent;
+}
+
 input,
 button {
     -webkit-appearance: none;
@@ -130,7 +139,6 @@ h6 {
     font-weight: 700;
 }
 header {
-    position: fixed;
     z-index: 100;
     width: 100%;
     & p {
