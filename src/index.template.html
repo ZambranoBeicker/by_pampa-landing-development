@@ -12,7 +12,7 @@
     <body>
         <header class="header bg-primary">
             <div class="container--flex">
-                <div class="container__content space-evenly">
+                <div class="container__content items-baseline space-evenly">
                     <h6 id="pampa">PAMPA</h6>
                     <p>Tu tienda online</p>
                 </div>
@@ -725,12 +725,18 @@
                 </div>
             </div>
         </div>
-        <footer class="bg-primary">
+        <footer class="desktop:bg-primary">
             <div class="container--flex">
                 <div class="container__content">
                     <div>
                         <img
+                            class="mobile:hidden"
                             src="./public/illustrations/footer-logo.png"
+                            alt=""
+                        />
+                        <img
+                            class="desktop:hidden"
+                            src="./public/illustrations/mobile/powered_by.jpg"
                             alt=""
                         />
                     </div>
