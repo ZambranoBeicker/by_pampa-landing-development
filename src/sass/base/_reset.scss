@@ -134,13 +134,21 @@ h6 {
 
 #pampa {
     border-right: 2px solid;
-    padding-right: 0.5rem;
+    padding: 0.5rem 0;
     margin-right: 0.5rem;
     font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 1.25rem;
+    padding: 0.5rem 0;
+    padding-right: 0.5rem;
 }
 header {
     z-index: 100;
     width: 100%;
+    padding: 1.25rem 0;
+    @media screen and (min-width: 1024px) {
+        padding: 0;
+    }
     & p {
         font-size: 0.875rem;
         font-style: italic;

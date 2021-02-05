@@ -56,11 +56,11 @@ $whiteNext.addEventListener('click', () => {
 })
 
 $blackPrev.addEventListener('click', () => {
-    $blackCounter.innerText = changeValue($blackCounter, 4, false)
+    $blackCounter.innerText = changeValue($blackCounter, 3, false)
     blackSlider.swiper.slidePrev()
 })
 $blackNext.addEventListener('click', () => {
-    $blackCounter.innerText = changeValue($blackCounter, 4, true)
+    $blackCounter.innerText = changeValue($blackCounter, 3, true)
     blackSlider.swiper.slideNext()
 })
 
